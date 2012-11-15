@@ -1,0 +1,7 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: imdb3
+  pool: 5
+  username: postgres
+  password:
