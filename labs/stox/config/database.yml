@@ -1,0 +1,9 @@
+
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: apt_Finder
+  pool: 5
+  username: postgres
+  password:

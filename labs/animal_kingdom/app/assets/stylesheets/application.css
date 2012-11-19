@@ -1,0 +1,14 @@
+/*
+ *= require_self
+ *= require_tree .
+ */
+
+.field label
+{
+	display: block;
+}
+
+.field
+{
+	margin-bottom: 10px;
+}

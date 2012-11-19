@@ -1,14 +1,22 @@
 <% @movies.each do |movie| %>
 	
 	<div class = "box" >
+		<% binding.pry %>
+
 		<ul>
 			<img src="<%= movie["Poster"] %>">
 			<li><%=	 movie['Title'] %></li>
 			<li><%=	 movie['Actors'] %></li>
 			<li><%=	 movie['Year'] %></li>
 			<li><%=	 movie['Rated'] %></li>
-			<li><%=	 movie['Genre'] %></li>
 			<li><%=	 movie['Runtime'] %></li>
+			<li>Genre</li>
+				<ul>
+					<% movie["Genre"].split(', ').each do |genre| %>
+					<li><%= genre %> </li>
+					<% end %>
+				</ul>
+
 		</ul>
 	</div>
 <% end %>
