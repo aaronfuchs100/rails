@@ -1,0 +1,18 @@
+<%= form_tag '/message', :id => 'message_form', :remote => true do %>
+
+Email:</br>
+<%= text_field_tag 'email' %>
+</br>
+Phone: </br>
+<%= text_field_tag 'phone' %>
+</br>
+Message: </br>
+<%= text_field_tag 'message' %>
+</br>
+
+<%= submit_tag 'GO!' %>
+
+<% end %>
+
+<p id = "name1">
+</p>

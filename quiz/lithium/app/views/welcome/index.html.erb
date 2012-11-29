@@ -1,0 +1,15 @@
+
+
+<input class = "lithium_box" type="button" id="new_lithium" value="New Name" />
+
+<%= form_tag '/lithium', :id => 'lithium_form', :remote => true do %>
+
+<%= text_field_tag 'name' %>
+  <%= submit_tag 'GO!' %>
+
+<% end %>
+
+<p id = "name1">
+</p>
+
+

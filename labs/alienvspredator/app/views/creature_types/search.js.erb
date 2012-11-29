@@ -1,0 +1,5 @@
+$ ("#c_type").empty();
+
+	<% @creature_types.each do |ct| %>
+		$ ("#c_type").prepend("<li><%= link_to ct.name %></li>");
+	<%end%>

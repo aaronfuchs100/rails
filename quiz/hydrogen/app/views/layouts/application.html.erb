@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hydrogen</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="row">
+  <div class="span12" id = "blue">blue</div>
+</div>
+
+<div class="row">
+  <div class="span4" id = "yellow" >Yellow</div>
+  <div class="span8" id = "green" ><%= yield %></div>
+</div>
+
+<div class="row">
+  <div class="span4" id = "orange" >Orange</div>
+  <div class="span4" id = "black" >Black</div>
+  <div class="span4" id = "red" >Red</div>
+</div>
+
+
+
+</body>
+</html>
